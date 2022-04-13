@@ -9,6 +9,7 @@ function normalizarTexto(texto) {
 
 /* ---------------------------------- email --------------------------------- */
 function validarEmail(email) {
+    const inputMail = document.querySelector('#inputEmail');
     
 }
 
