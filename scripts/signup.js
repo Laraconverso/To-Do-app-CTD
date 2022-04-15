@@ -6,7 +6,6 @@ window.addEventListener('load', function () {
     const email = document.querySelector('#inputEmail');
     const password = document.querySelector('#inputPassword');
     const url = 'https://ctd-todo-api.herokuapp.com/v1';
-
     
     /* -------------------------------------------------------------------------- */
     /*            FUNCIÓN 1: Escuchamos el submit y preparamos el envío           */
@@ -38,6 +37,11 @@ window.addEventListener('load', function () {
         fetch(`${url}/users`,settings)
             .then(response => {
                 console.log(response);
+                let validacionEmail = validarEmail(email.value);
+                if(!validacionEmail){
+                    response.ok = false;
+                    throw Error;
+                }
                 if(response.ok != true){
                     alert("Algunos de los datos son incorrectos")
                 }
