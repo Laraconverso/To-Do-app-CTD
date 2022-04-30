@@ -33,4 +33,4 @@ Link con la documentación de los endpoints de la API y su funcionamiento:
 - [ ] FUNCIÓN 7: Eliminar definitivamente una tarea.
 
 ## Requerimiento no funcional
-- [ ] Desarrollar las validaciones de utils.js para su implementación.# To-Do-app
+- [ ] Desarrollar las validaciones de utils.js para su implementación.
